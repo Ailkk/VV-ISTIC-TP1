@@ -16,3 +16,24 @@
 Dans les premières versions du jeu (milieu des années 90), les consoles de l'époque avaient des capacité de puissance limité et il fallait donc optimiser la mémoire dans les cartouches du jeu. Les données du jeu sont gérés par un système d'adressage de mémoire en hexadécimal sur deux chiffres, ce qui correspond à 256 possibilité; 151 possibilités correspondent aux 151 pokémons de la première génération, ce qui laisse donc 105 autres adresses de libre. 39 de ces adresses restantes correspondent à MissingNo (numéro manquant), ce qui sous entend qu'il y avait 39 autres pokémons "prévus" ou supprimés lors du développement, le reste correspondant à de la gestion d'autres bugs. Dans une ville du jeu, il y a un stockage de la dernière région visitée, du nom du joueur, et d'autres données, afin de déterminer les pokémons que le joueur peut rencontrer. L'absence de l'une (ou plusieurs) de ces données entraînent un bug de recherche de pokémon et renvoi à une des adresses de MissingNo. La manière de générer ce bug est plutôt sous la forme d'un "glitch" des données, qui n'est pas un comportement attendu. Il existe plusieurs moyens de générer ce cas, ainsi que plusieurs versions de MissingNo (rendez-vous [ici](https://bulbapedia.bulbagarden.net/wiki/MissingNo.) pour plus de détails). Une manière d'empêcher ce bug de se produire pourrait être une simple vérification de la présence de ces champs (et d'assigner un comportement à appliquer en cas d'absence) et également de pouvoir avoir un meilleur contrôle des glitchs afin d'éviter le plus possible de tomber dans ce cas d'absence des données.
 Ce bug est un bug local car présent dans les cartouches américaines et européennes du jeu. 
 Les répercussions sur l'expérience de jeu n'ont pas un grand impact, car ce pokémon représente juste un pokémon sans donnée. Il a cependant marqué certains enfants lors de la découverte de ce bug, ainsi que généré énormément de rumeurs et légendes autour de MissingNo, jusqu'à ce que le jeu se fasse explorer dans les années 2010 afin de pouvoir expliquer son origine. Pour l'association du groupe GameFreaks/Nintendo, ce bug et les rumeurs qu'il a créé ont permis d'entretenir l'envie de jouer aux jeux chez les jeunes joueurs et a permis de consolider la base de consommateurs. Aujourd'hui MissingNo est un "pokémon" culte de la saga, à tel point que des références y sont faites dans les dernières versions des jeux Pokémons.
+
+
+2. Le but de netflix étant de tester des bug pouvant réelement arriver leur testing suit une logique d'évenement plausibles, d'après le papier les plus récurrents sont :
+- Eteindre des machine virtuelles
+- Rajouter de la latence dans le système entre les services
+- Faire échouer les requetes entre les services
+- Simplement faire échouer le service
+- Eteindre le service Amazon de la zone (ou au moins simuler cette région)
+
+Néanmoins, certaines précautions doivent être prises. En effet le service ne doit pas être trop impacté par la suite de tests et un serveur coupé volontairement doit pouvoir être remplacé par un autre.
+
+Dans le cas de Netflix, la métrique utilisée est le SPS (le stream par seconde) qui mesure le nombre de vidéo démarées par secondes.
+Pour utiliser une métrique supplémentaire, ils utilisent aussi le nombre de connexion d'utilisateur différents par secondes.
+
+D'après l'article, d'autres entreprises ayant le même type de besoins que Netflix, c'est a dire maintenir une grosse architecture devant etre accessible de n'importe quel espace sur la terre avec le minimum de coupures possibes, utilisent ce genre de protocoles de tests tels que Amazon, Google, Microsoft et Facebook.
+Nous pouvons aussi ajouter la SNCF comme vu dans le cours.
+
+D'autre entreprises ayant le même type de contraites que celles citées ci dessus pourraient utiliser ce systeme de test. Peu importe le système testé si il doit se comporter avec des utilisateurs, les métriques tourneront toujours autour de leur satisfaction et donc de la qualité d'accès au service. 
+
+//TODO A revoir et ajouter des trucs ?
+
