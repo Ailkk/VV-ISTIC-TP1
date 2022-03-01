@@ -17,9 +17,9 @@ Dans les premières versions du jeu (milieu des années 90), les consoles de l'�
 Ce bug est un bug local car présent dans les cartouches américaines et européennes du jeu. 
 Les répercussions sur l'expérience de jeu n'ont pas un grand impact, car ce pokémon représente juste un pokémon sans donnée. Il a cependant marqué certains enfants lors de la découverte de ce bug, ainsi que généré énormément de rumeurs et légendes autour de MissingNo, jusqu'à ce que le jeu se fasse explorer dans les années 2010 afin de pouvoir expliquer son origine. Pour l'association du groupe GameFreaks/Nintendo, ce bug et les rumeurs qu'il a créé ont permis d'entretenir l'envie de jouer aux jeux chez les jeunes joueurs et a permis de consolider la base de consommateurs. Aujourd'hui MissingNo est un "pokémon" culte de la saga, à tel point que des références y sont faites dans les dernières versions des jeux Pokémons.
 
-2.
+2. 
 
-3Le but de netflix étant de tester des bug pouvant réelement arriver leur testing suit une logique d'évenement plausibles, d'après le papier les plus récurrents sont :
+3. Le but de netflix étant de tester des bug pouvant réelement arriver leur testing suit une logique d'évenement plausibles, d'après le papier les plus récurrents sont :
 - Eteindre des machine virtuelles
 - Rajouter de la latence dans le système entre les services
 - Faire échouer les requetes entre les services
@@ -34,10 +34,8 @@ Pour utiliser une métrique supplémentaire, ils utilisent aussi le nombre de co
 D'après l'article, d'autres entreprises ayant le même type de besoins que Netflix, c'est a dire maintenir une grosse architecture devant etre accessible de n'importe quel espace sur la terre avec le minimum de coupures possibes, utilisent ce genre de protocoles de tests tels que Amazon, Google, Microsoft et Facebook.
 Nous pouvons aussi ajouter la SNCF comme vu dans le cours.
 
-D'autre entreprises ayant le même type de contraites que celles citées ci dessus pourraient utiliser ce systeme de test. Peu importe le système testé si il doit se comporter avec des utilisateurs, les métriques tourneront toujours autour de leur satisfaction et donc de la qualité d'accès au service. 
+D'autre entreprises ayant le même type de contraites que celles citées ci dessus pourraient utiliser ce systeme de test. Peu importe le système testé si il doit se comporter avec des utilisateurs, les métriques tourneront toujours autour de leur satisfaction et donc de la qualité d'accès au service.
 
-//TODO A revoir et ajouter des trucs ?
-
-4. Luca => Je pars la dessus
+4. Avoir une spécification établie pour un language permet d'en définir les limites, en aprtie grace a la grammaire. En effet la grammaire précisément formée permet de limiter une partie des erreurs potencielles. Ainsi un programme malveillant ne passera pas l'étape de la validation. Néanmoins il reste des zones d'ombres étant déclarées comme non définies dans le papier. Qu'elles le soit ou pas dans le futur il reste tout le même la problématique de trouver des problèmes qui n'ont pas été trouvé a la base. Même si dans ce genre de cas tester ne donnera probablement rien (en partant du principe que la grammaire a été bien pensée) cela constitue une source de sécurité supplémentaire.
 
 5. 
