@@ -17,8 +17,9 @@ Dans les premières versions du jeu (milieu des années 90), les consoles de l'�
 Ce bug est un bug local car présent dans les cartouches américaines et européennes du jeu. 
 Les répercussions sur l'expérience de jeu n'ont pas un grand impact, car ce pokémon représente juste un pokémon sans donnée. Il a cependant marqué certains enfants lors de la découverte de ce bug, ainsi que généré énormément de rumeurs et légendes autour de MissingNo, jusqu'à ce que le jeu se fasse explorer dans les années 2010 afin de pouvoir expliquer son origine. Pour l'association du groupe GameFreaks/Nintendo, ce bug et les rumeurs qu'il a créé ont permis d'entretenir l'envie de jouer aux jeux chez les jeunes joueurs et a permis de consolider la base de consommateurs. Aujourd'hui MissingNo est un "pokémon" culte de la saga, à tel point que des références y sont faites dans les dernières versions des jeux Pokémons.
 
+2.
 
-2. Le but de netflix étant de tester des bug pouvant réelement arriver leur testing suit une logique d'évenement plausibles, d'après le papier les plus récurrents sont :
+3Le but de netflix étant de tester des bug pouvant réelement arriver leur testing suit une logique d'évenement plausibles, d'après le papier les plus récurrents sont :
 - Eteindre des machine virtuelles
 - Rajouter de la latence dans le système entre les services
 - Faire échouer les requetes entre les services
@@ -37,3 +38,6 @@ D'autre entreprises ayant le même type de contraites que celles citées ci dess
 
 //TODO A revoir et ajouter des trucs ?
 
+4. Luca => Je pars la dessus
+
+5. 
