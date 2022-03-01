@@ -26,15 +26,15 @@ Les répercussions sur l'expérience de jeu n'ont pas un grand impact, car ce po
 - Simplement faire échouer le service
 - Eteindre le service Amazon de la zone (ou au moins simuler cette région)
 
-Néanmoins, certaines précautions doivent être prises. En effet le service ne doit pas être trop impacté par la suite de tests et un serveur coupé volontairement doit pouvoir être remplacé par un autre.
+  Néanmoins, certaines précautions doivent être prises. En effet le service ne doit pas être trop impacté par la suite de tests et un serveur coupé volontairement doit pouvoir être remplacé par un autre.
 
-Dans le cas de Netflix, la métrique utilisée est le SPS (le stream par seconde) qui mesure le nombre de vidéo démarées par secondes.
-Pour utiliser une métrique supplémentaire, ils utilisent aussi le nombre de connexion d'utilisateur différents par secondes.
+  Dans le cas de Netflix, la métrique utilisée est le SPS (le stream par seconde) qui mesure le nombre de vidéo démarées par secondes.
+  Pour utiliser une métrique supplémentaire, ils utilisent aussi le nombre de connexion d'utilisateur différents par secondes.
 
-D'après l'article, d'autres entreprises ayant le même type de besoins que Netflix, c'est a dire maintenir une grosse architecture devant etre accessible de n'importe quel espace sur la terre avec le minimum de coupures possibes, utilisent ce genre de protocoles de tests tels que Amazon, Google, Microsoft et Facebook.
-Nous pouvons aussi ajouter la SNCF comme vu dans le cours.
+  D'après l'article, d'autres entreprises ayant le même type de besoins que Netflix, c'est a dire maintenir une grosse architecture devant etre accessible de n'importe quel espace sur la terre avec le minimum de coupures possibes, utilisent ce genre de protocoles de tests tels que Amazon, Google, Microsoft et Facebook.
+  Nous pouvons aussi ajouter la SNCF comme vu dans le cours.
 
-D'autre entreprises ayant le même type de contraites que celles citées ci dessus pourraient utiliser ce systeme de test. Peu importe le système testé si il doit se comporter avec des utilisateurs, les métriques tourneront toujours autour de leur satisfaction et donc de la qualité d'accès au service.
+  D'autre entreprises ayant le même type de contraites que celles citées ci dessus pourraient utiliser ce systeme de test. Peu importe le système testé si il doit se comporter avec des utilisateurs, les métriques tourneront toujours autour de leur satisfaction et donc de la qualité d'accès au service.
 
 4. Avoir une spécification établie pour un language permet d'en définir les limites, en aprtie grace a la grammaire. En effet la grammaire précisément formée permet de limiter une partie des erreurs potencielles. Ainsi un programme malveillant ne passera pas l'étape de la validation. Néanmoins il reste des zones d'ombres étant déclarées comme non définies dans le papier. Qu'elles le soit ou pas dans le futur il reste tout le même la problématique de trouver des problèmes qui n'ont pas été trouvé a la base. Même si dans ce genre de cas tester ne donnera probablement rien (en partant du principe que la grammaire a été bien pensée) cela constitue une source de sécurité supplémentaire.
 
