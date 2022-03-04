@@ -43,6 +43,6 @@ D'autre entreprises ayant le même type de contraintes que celles citées ci-des
 
 La spécification mécanisée de cette manière permet de faire des vérifications statiques et de vérifier la cohérence du programme par rapport à l'attendu.
 Grace a ce travail supplémentaire sur le langage, une amélioration a été trouvée. En effet, l'instruction TRAP a été modifiée pour pouvoir permettre une meilleure propagation des erreurs et donc de finalement prouver le langage.
- ×ÔÎ¿jnhgfxdgfvhjnjnhgxdfgvhyjn
+De toute cette étude, en ressort un model du langage, typeChecker en ISabelle et un interpréteur
 Pour vérifier la spécification, les auteurs ont décidé de prouver le langage en utilisant un interpréteur en Isabelle. Grace a cet interpréteur, ils ont pu prouver la robustesse de leur langage.
 La nouvelle spécification ne supprimer pas du tout le besoin de tester, dans le même objectif de trouver des bugs non prévu les tests restent partie intégrante du projet. Bien qu'aucun bug relatif à la grammaire en elle même ne fut trouvé, ces tests on tout de même permis de repérer un problème dans le binaire.
