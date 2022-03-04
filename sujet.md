@@ -39,4 +39,10 @@ D'autre entreprises ayant le même type de contraintes que celles citées ci-des
 
 4. Avoir une spécification établie pour un langage permet d'en définir les limites, en partie grace a la grammaire. En effet, la grammaire précisément formée permet de limiter une partie des erreurs potentielles. Ainsi un programme malveillant ne passera pas l'étape de la validation. Néanmoins, il reste des zones d'ombres étant déclarées comme non définies dans le papier. Qu'elles le soient ou pas dans le futur, il reste tout le même la problématique de trouver des problèmes qui n'ont pas été trouvé a la base. Même si dans ce genre de cas tester ne donnera probablement rien (en partant du principe que la grammaire a été bien pensée) cela constitue une source de sécurité supplémentaire.
 
-5. 
+5. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification?
+
+La spécification mécanisée de cette manière permet de faire des vérifications statiques et de vérifier la cohérence du programme par rapport à l'attendu.
+Grace a ce travail supplémentaire sur le langage, une amélioration a été trouvée. En effet, l'instruction TRAP a été modifiée pour pouvoir permettre une meilleure propagation des erreurs et donc de finalement prouver le langage.
+ ×ÔÎ¿jnhgfxdgfvhjnjnhgxdfgvhyjn
+Pour vérifier la spécification, les auteurs ont décidé de prouver le langage en utilisant un interpréteur en Isabelle. Grace a cet interpréteur, ils ont pu prouver la robustesse de leur langage.
+La nouvelle spécification ne supprimer pas du tout le besoin de tester, dans le même objectif de trouver des bugs non prévu les tests restent partie intégrante du projet. Bien qu'aucun bug relatif à la grammaire en elle même ne fut trouvé, ces tests on tout de même permis de repérer un problème dans le binaire.
